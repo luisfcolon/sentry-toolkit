@@ -4,6 +4,7 @@
   "description": "Sentry tools and logger",
   "main": "dist",
   "scripts": {
+    "build": "./node_modules/.bin/babel --presets es2015 src --ignore .test. --out-dir ./dist",
     "test": "./node_modules/jest/bin/jest.js --coverage",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
@@ -20,11 +21,12 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js}",
-      "!src/sentry/index.{js}"
+      "!src/sentry/index.{js}",
+      "!src/index.{js}"
     ]
   },
   "dependencies": {
-    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
     "babel-jest": "^21.0.2",
     "babel-preset-es2015": "^6.24.1",
     "coveralls": "^2.13.1",

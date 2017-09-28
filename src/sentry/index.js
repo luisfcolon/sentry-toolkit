@@ -12,7 +12,7 @@ if (!Raven._isRavenInstalled) {
   }).install();
 }
 
-function replaceErrorConsole() {
+function bindSentryToErrorConsole() {
   const originalConsoleError = console.error;
 
   function sentryErrorConsole(...args) {
@@ -31,4 +31,4 @@ function replaceErrorConsole() {
   console.error = sentryErrorConsole;
 }
 
-export { Raven, replaceErrorConsole };
+export { Raven, bindSentryToErrorConsole };
