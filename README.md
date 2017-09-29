@@ -11,7 +11,17 @@ Sentry tools and logger
 
 ## Installation
 
-...coming soon
+With yarn
+
+```
+yarn add sentry-toolkit
+```
+
+With npm
+
+```
+npm install sentry-toolkit --save
+```
 
 ## Usage
 
