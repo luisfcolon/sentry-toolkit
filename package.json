@@ -1,10 +1,10 @@
 {
   "name": "sentry-toolkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sentry tools and logger",
   "main": "dist",
   "scripts": {
-    "build": "./node_modules/.bin/babel --presets es2015 src --ignore .test. --out-dir ./dist",
+    "build": "./node_modules/.bin/webpack",
     "test": "./node_modules/jest/bin/jest.js --coverage",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
@@ -26,13 +26,19 @@
     ]
   },
   "dependencies": {
+    "raven-js": "^3.17.0"
+  },
+  "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
     "babel-jest": "^21.0.2",
+    "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "coveralls": "^2.13.1",
     "jest": "^21.1.0",
     "ohas": "^1.0.1",
-    "raven-js": "^3.17.0",
-    "sinon": "^3.3.0"
+    "sinon": "^3.3.0",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
+    "webpack": "^3.7.1"
   }
 }
