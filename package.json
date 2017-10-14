@@ -1,6 +1,6 @@
 {
   "name": "sentry-toolkit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sentry tools and logger",
   "main": "dist",
   "scripts": {

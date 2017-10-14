@@ -28,15 +28,16 @@ npm install sentry-toolkit --save
 
 ### Environment variables
 
-You need a [Sentry](https://sentry.io/welcome/) account and your sentry public dsn key. Set that key in your environment file.
+You need a [Sentry](https://sentry.io/welcome/) account and your sentry public dsn key. Set that key in your environment file. An [example environment file](https://github.com/luisfcolon/sentry-toolkit/blob/master/.env.sample) is part of the this repo.
+
+__In the root of your project__
 
 ```
-cp .env.sample .env
 vim .env
 
 ```
 
-There are 2 variables you have to set:
+__There are 2 variables you have to set:__
 
 `SENTRY_PUBLIC_DSN`
 
