@@ -34,7 +34,6 @@ __In the root of your project__
 
 ```
 vim .env
-
 ```
 
 __There are 2 variables you have to set:__
