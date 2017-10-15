@@ -28,7 +28,7 @@ npm install sentry-toolkit --save
 
 ### Environment variables
 
-You need a [Sentry](https://sentry.io/welcome/) account and your sentry public dsn key. Set that key in your environment file. An [example environment file](https://github.com/luisfcolon/sentry-toolkit/blob/master/.env.sample) is part of the this repo.
+You will need a [Sentry](https://sentry.io/welcome/) account and your Sentry public dsn key. You will need to set that key in your environment file. An [example environment file](https://github.com/luisfcolon/sentry-toolkit/blob/master/.env.sample) is part of the this repo.
 
 __In the root of your project__
 
@@ -52,9 +52,9 @@ __There are 2 variables you have to set:__
 
 Everytime an exception or error is sent to the error console, it will also be sent to your sentry account.
 
-This should executed very early in your application; even one of the first things.
+This should be executed very early in your application; even one of the first things.
 
-```
+```javascript
 import { bindSentryToErrorConsole } from 'sentry-toolkit';
 
 

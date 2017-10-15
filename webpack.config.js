@@ -10,13 +10,11 @@ module.exports = {
      filename: 'index.js'
    },
    module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/
-      }
-    ]
+    loaders: [{
+      test: /\.js$/,
+      loader: 'babel-loader',
+      exclude: /node_modules/
+    }]
   },
   plugins: [
     new UglifyJSPlugin()
