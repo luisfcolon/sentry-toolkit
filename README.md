@@ -1,5 +1,7 @@
 # Sentry Toolkit
 
+### I have not used this repo in several years. It may or may not work anymore. If anyone wants to help keep it updated please feel free.
+
 [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 [![Build Status](https://travis-ci.org/luisfcolon/sentry-toolkit.svg?branch=master)](https://travis-ci.org/luisfcolon/sentry-toolkit)
 [![Coverage Status](https://coveralls.io/repos/github/luisfcolon/sentry-toolkit/badge.svg?branch=master)](https://coveralls.io/github/luisfcolon/sentry-toolkit?branch=master)
